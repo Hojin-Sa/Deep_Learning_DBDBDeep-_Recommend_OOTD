@@ -16,7 +16,7 @@
 ## 개발자 :computer:
 
 
-**사호진**[@Hojin-Sa](https://github.com/Hojin-Sa)   **한현수**[@hyun-s](https://github.com/hyun-s)   **김진성**[@](https://github.com/)   **고동천**[@cheon4050](https://github.com/cheon4050)
+**사호진**[@Hojin-Sa](https://github.com/Hojin-Sa)   **한현수**[@hyun-s](https://github.com/hyun-s)   **김진성**[@KimJinSungDataScientist](https://github.com/KimJinSungDataScientist)   **고동천**[@cheon4050](https://github.com/cheon4050)
 
 -----------------------------------------------------------
 
