@@ -1,10 +1,32 @@
 # Deep_Learning_DBDBDeep-_Recommend_OOTD
-# 주제: 딥러닝을 이용한 나만의 코디 추천
+# _주제: 딥러닝을 이용한 나만의 코디 추천_
 
 - 사용언어
 
-        <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a> 
+<img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a> _(파이썬)_
 
-- 개발기간
+## 개발기간
 
-        2021/05/11 ~ 2021/05/22
+        2021/03/26 ~ 2021/05/22
+
+## 개발자
+
+        사호진, 한현수, 김진성, 고동천 (나중에 깃헙 아이디로 바꾸기)
+        @Hojin-Sa 
+        
+## 목적 및 기획 배경
+         패션에 대한 관심 증대! 
+        👉옷을 잘 못 입는 ‘패션 고자’들 등장!
+        👉옷에 관심이 생겼는데 어떻게 입어야 할지 모르겠어!
+        👉옷은 많은데 어떻게 매치해야할지 모르겠어!
+        
+        🚩__“자신의 옷장에 있는 옷으로 모델들의 트렌디한 코디를 토대로 조합을 추천 해주는 프로그램!”__
+
+
+
+## 사용프로그램
+
+## 개발전략
+
+## 결과
+        
