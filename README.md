@@ -3,6 +3,8 @@
 
 - 사용언어
 
-<img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a> 
+        <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/></a> 
 
 - 개발기간
+
+        2021/05/11 ~ 2021/05/22
