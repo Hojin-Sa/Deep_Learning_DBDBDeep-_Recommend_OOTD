@@ -41,12 +41,13 @@ class Recommend(QWidget):
         btn1.clicked.connect(self.btn1clicked)
         btn2.clicked.connect(self.btn2clicked)
         vbox.addWidget(label1,0,0)
-        vbox.addWidget(lbl_img,1,0)
-        vbox.addWidget(lbl_img2,1,1)
-        vbox.addWidget(btn1, 2, 0)
-        vbox.addWidget(btn2,2,1)
+        vbox.addWidget(lbl_img)
+        vbox.addWidget(btn1)
+        vbox.addWidget(lbl_img2)
+        vbox.addWidget(btn2)
         self.setWindowTitle('AI 코디 추천')
-        self.resize(400, 300)
+        self.setGeometry(0, 0, 0, 0)
+        self.resize(452, 805)
         self.show()
 
     def btn1clicked(self):

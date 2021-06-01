@@ -13,11 +13,6 @@ img_shape = (img_size,img_size,3)
 batch_size = 32
 epochs = 5
 dropout_rate = 0.5
-img_size = 224
-img_shape = (img_size, img_size, 3)
-batch_size = 32
-epochs = 2
-dropout_rate = 0.5
 num_of_predict = 4
 labels = ['Not sure', 'T-Shirt', 'Shoes', 'Shorts', 'Shirt', 'Pants',
  'Skirt', 'Other', 'Top', 'Outwear', 'Dress', 'Body', 'Longsleeve', 'Undershirt',
@@ -118,5 +113,3 @@ def return_data_frame(model,dir_path):
             outs.append('그 외')
     out_dataframe = pd.DataFrame({'대분류':outs,'중분류':dht_list,'색':tor_list})
     return out_dataframe
-model = load_model()
-print(return_data_frame(model,'img/'))

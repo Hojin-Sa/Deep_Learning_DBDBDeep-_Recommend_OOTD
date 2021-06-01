@@ -20,7 +20,8 @@ class Clothesview(QWidget):
         cb.addItem('shoes')
         self.setLayout(self.vbox)
         # 창 크기
-        self.resize(500,400)
+        self.setGeometry(0, 0, 0, 0)
+        self.resize(450, 805)
         self.lbl_img = QLabel()
         self.lbl_img2 = QLabel()
         cb.activated[str].connect(self.onActivated)
@@ -41,7 +42,7 @@ class Clothesview(QWidget):
             self.shoes()
 
     def top(self):
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/top/top1'+str(i)+'.jpeg'
             pixmap = QPixmap(st)
             self.lbl_img = QLabel('lbl_img', self)
@@ -52,10 +53,11 @@ class Clothesview(QWidget):
                 self.vbox.addWidget(self.lbl_img, int((i-1)/2+1), 0)
 
     def bottom(self):
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/bottom/bottom1' + str(i) + '.jpeg'
             pixmap = QPixmap(st)
             self.lbl_img = QLabel('lbl_img', self)
+            #self.lbl_img.resize(100)
             self.lbl_img.setPixmap(pixmap)
             if i % 2 == 0:
                 self.vbox.addWidget(self.lbl_img, int((i - 1) / 2 + 1), 1)
@@ -63,7 +65,7 @@ class Clothesview(QWidget):
                 self.vbox.addWidget(self.lbl_img, int((i - 1) / 2 + 1), 0)
 
     def dress(self):
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/dress/dress1' + str(i) + '.jpeg'
             pixmap = QPixmap(st)
             self.lbl_img = QLabel('lbl_img', self)
@@ -74,7 +76,7 @@ class Clothesview(QWidget):
                 self.vbox.addWidget(self.lbl_img, int((i - 1) / 2 + 1), 0)
 
     def shoes(self):
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/shoes/shoes1' + str(i) + '.jpeg'
             pixmap = QPixmap(st)
             self.lbl_img = QLabel('lbl_img', self)

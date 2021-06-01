@@ -1,9 +1,13 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton
+from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
+from PyQt5 import QtGui
 from Clothes import Clothesview
 from testImage import Testimage
 from Choice import Choice
+from PyQt5.QtWidgets import QGraphicsOpacityEffect
+import load_model as lm
 class MyApp(QWidget):
 
     def __init__(self):
@@ -13,7 +17,9 @@ class MyApp(QWidget):
 
     def initUI(self):
         #Qlabel
-        label1 = QLabel('AI 코디 추천', self)
+        global label1
+
+        label1 = QLabel('Deep Learning 을\n이용한 코디 추천', self)
         label1.setAlignment(Qt.AlignCenter)
 
         font1 = label1.font()
@@ -40,12 +46,17 @@ class MyApp(QWidget):
         self.setLayout(layout)
         self.setWindowTitle('AI 코디 추천')
         #창 띄우는 위치
-        self.setGeometry(100, 100, 100, 100)
-        self.resize(400, 300)
+        self.setGeometry(0, 0, 0, 0)
+        self.resize(450, 805)
         self.show()
         #사진찍기
     def btnclicked(self):
+        model = lm.load_model()
         self.win = Testimage()
+        label = lm.labels[lm.predict_output(model,'img/top/top11.jpeg')]
+        color = lm.return_color('img/top/top11.jpeg')
+        label1.setText('예측된 종류 : '+label+ '\n예측된 색상 :'+ color)
+        label1.repaint()
 
         #옷장
     def btn1clicked(self):

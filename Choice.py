@@ -10,6 +10,8 @@ class Choice(QWidget):
         self.initUI()
 
     def initUI(self):
+        self.setGeometry(0, 0, 0, 0)
+        self.resize(450, 805)
         self.vbox = QGridLayout()
 
         cb = QComboBox(self)
@@ -19,7 +21,8 @@ class Choice(QWidget):
         cb.addItem('shoes')
         self.setLayout(self.vbox)
         #창 크
-        self.resize(500,400)
+        self.setGeometry(0, 0, 0, 0)
+        self.resize(450, 805)
         self.lbl_img = QLabel()
         self.lbl_img2 = QLabel()
         cb.activated[str].connect(self.onActivated)
@@ -43,11 +46,12 @@ class Choice(QWidget):
 
     def top(self):
         btn_list= []
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/top/top1'+str(i)+'.jpeg'
             pixmap = QPixmap(st)
             btn_list.append((i, QPushButton("선택")))
             self.lbl_img = QLabel('lbl_img', self)
+            self.lbl_img.resize(100,100)
             self.lbl_img.setPixmap(pixmap)
             if i % 2 == 0:
                 self.vbox.addWidget(self.lbl_img, i-1, 1)
@@ -64,7 +68,7 @@ class Choice(QWidget):
 
     def bottom(self):
         btn_list = []
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/bottom/bottom1' + str(i) + '.jpeg'
             pixmap = QPixmap(st)
             btn_list.append((i, QPushButton("선택")))
@@ -79,7 +83,7 @@ class Choice(QWidget):
 
     def dress(self):
         btn_list = []
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/dress/dress1' + str(i) + '.jpeg'
             pixmap = QPixmap(st)
             btn_list.append((i, QPushButton("선택")))
@@ -94,7 +98,7 @@ class Choice(QWidget):
 
     def shoes(self):
         btn_list = []
-        for i in range(1, 6):
+        for i in range(1, 7):
             st = 'img/shoes/shoes1' + str(i) + '.jpeg'
             pixmap = QPixmap(st)
             btn_list.append((i, QPushButton("선택")))
